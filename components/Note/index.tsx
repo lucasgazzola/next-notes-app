@@ -1,8 +1,8 @@
-import { INote } from "../../interfaces/INote";
 import styles from "./Note.module.css";
+import { NoteType } from "../../interfaces/INote";
 
 
-export default function Note({ note }: { note: INote }) {
+export default function Note({ note }: { note: NoteType }) {
   return (
     <div className={styles.noteContainer}>
       <header className={styles.titleContainer}>

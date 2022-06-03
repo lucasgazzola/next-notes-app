@@ -1,7 +1,9 @@
 import { DocumentData } from "firebase/firestore"
 
-export interface INote extends DocumentData {
+export interface INote {
   title: string;
   content: string;
   date: string;
 }
+
+export type NoteType = DocumentData | INote
